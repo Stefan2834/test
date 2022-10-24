@@ -13,11 +13,13 @@ body {
   overflow-x:hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
 }
 .section {
   width:100vw;
   height:100vh;
   scroll-snap-align: end;
+  position:relative;
 }
 .section:nth-child(1) {
   background-color: red;
