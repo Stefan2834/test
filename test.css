@@ -15,19 +15,18 @@ body {
   height:100vh;
   overflow-x:hidden;
   overflow-y: scroll;
-  scroll-snap-type:y proximity;
+  scroll-snap-type:y mandatory;
   scroll-snap-points-y: repeat(100vh);
 }
 .section {
   width:100vw;
   height:100vh;
-  scroll-snap-align: end;
+  scroll-snap-align: start;
   scroll-snap-stop:always;
   position:relative;
 }
 .section:nth-child(1) {
   background-color: red;
-  height:200vh;
 }
 .section:nth-child(3) {
   background-color: red;
